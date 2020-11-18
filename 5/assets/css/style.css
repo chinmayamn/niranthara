@@ -22,10 +22,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 { */
+  /* font-family: "Raleway", sans-serif; */
+/* } */
+h1, h2, h3, h4, h6 {
   font-family: "Raleway", sans-serif;
 }
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -60,11 +62,11 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  height: 76px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 16px 0;
+  /* padding: 3px 0; */
   background: #094F1D;
 }
 
@@ -226,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 32px;
+  top: 21px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -343,6 +345,13 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+.carousel-indicators li{ background-color:#14702e;}
+
+/* .carousel-control-next-icon */
+	/* { */
+/* border-radius:40px; background-color:red;width:40px !important;height:40px !important; */
+/* } */
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -350,12 +359,22 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   padding: 0 0 0 0;
-   background: #213b52; 
-  background: linear-gradient(180deg,#094F1D 0%, #094F1D 35%, #094F1D 100%); 
-
-
+  
+   /* background: #213b52;  */
+  /* background: linear-gradient(180deg,#094F1D 0%, #094F1D 35%, #094F1D 100%);  */
 }
 
+.banner{
+	background-image: url("../img/bg.png");
+	background-repeat:repeat-x;
+	 
+	filter:blur(6px);
+	-webkit-filter: blur(6px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='+');
+	width:98%;position:absolute;
+	z-index:-1;
+	overflow:hidden;
+}
 #hero h1 {
   margin: 0 0 15px 0;
   font-size: 48px;
@@ -424,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 67px 0;
   overflow: hidden;
 }
 
@@ -1254,11 +1273,19 @@ background: linear-gradient(180deg, rgba(144,238,158,0.3841736523711047) 0%, rgb
   text-decoration: none;
 }
 
+.gbox{
+	border-width: 2px;border-color: grey !important;border-style: solid;background-color:white;
+}
+
+.gname
+{
+	padding-top:12px;background-color:#14702e;color:white;padding-bottom:1px;
+}
 #footer .footer-bottom {
   border-top: 1px solid #1a2e40;
   z-index: 2;
   position: relative;
-  padding-top: 40px;
+  padding-top: 0px;
   padding-bottom: 40px;
 }
 

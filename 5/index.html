@@ -428,7 +428,7 @@ a.close-chat {
 
   <!-- ======= Header ======= -->
   <header id="header">
-    <div class="container d-flex">
+    <div class="container-fluid d-flex" style="position: fixed;background-color:#094F1D;z-index: 8;">
 
       <div class="logo mr-auto" ><img src="assets/img/logo.png" class="img-fluid"/>
         <h1 class="text-light" style="display:inline-block !important"><a href="index.html">Niranthara Traders<br/><span>Service with gratitude </span></a></h1>
@@ -436,7 +436,7 @@ a.close-chat {
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <nav class="nav-menu d-none d-lg-block">
+      <nav class="nav-menu d-none d-lg-block" style="margin-top: 5px;">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About Us</a></li>
@@ -444,9 +444,11 @@ a.close-chat {
           <li><a href="#portfolio">Products</a></li>
           
           <li><a href="#contact">Contact Us</a></li>
-		 <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-facebook"></span></a></li>
-                <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-twitter"></span></a></li>
-                <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-linkedin"></span></a></li>
+		  <li class="social" >
+			<a href="#contact-section" class="nav-link" style="display:inline-block"><span class="icon-twitter"></span></a>
+			<a href="#contact-section" class="nav-link" style="display:inline-block"><span class="icon-facebook"></span></a>
+            <a href="#contact-section" class="nav-link" style="display:inline-block"><span class="icon-instagram"></span></a>
+		  </li>
           
         </ul>
       </nav><!-- .nav-menu -->
@@ -456,20 +458,87 @@ a.close-chat {
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-
-    <div class="container">
-      <div class="row d-flex align-items-center"">
-      <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
-        <h1>Your one stop solution for gear boxes and pumps</h1>
-       
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-      </div>
-      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
-        <img src="assets/img/hero-img.png" class="img-fluid" alt="">
-      </div>
+    <div class="container-fluid"  >
+	<div class="banner">
+		<img src="assets/img/bg.png"/>
     </div>
-    </div>
-
+	<div class="carousel slide" data-ride="carousel" id="myCarousel">
+	
+	  <ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+	  </ol>
+	    <div class="carousel-inner">
+			<div class="carousel-item active">
+					<div class="row d-flex align-items-center">
+				
+					  <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+						<h1>Your one stop solution for industrial induction motors and gear boxes</h1>
+					   
+						<a href="#about" class="btn-get-started scrollto">Get Started</a>
+					  </div>
+					  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" style="z-index:5">
+						<img src="assets/img/IMG-20201117-WA0013.png" class="img-fluid" alt="">
+					  </div>
+					</div>
+			</div>
+				
+				
+			<div class="carousel-item">
+					<div class="row d-flex align-items-center">
+					  <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+						<h1> asdasads asdYour one stop solution for gear boxes and pumps</h1>
+					   
+						<a href="#about" class="btn-get-started scrollto">Get Started</a>
+					  </div>
+					  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" style="z-index:5">
+						<img src="assets/img/hero-img.png" class="img-fluid" alt="">
+					  </div>
+					</div>
+			</div>
+			
+			<div class="carousel-item">
+					<div class="row d-flex align-items-center">
+					  <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+						<h1> 11111 one stop solution for gear boxes and pumps</h1>
+					   
+						<a href="#about" class="btn-get-started scrollto">Get Started</a>
+					  </div>
+					  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" style="z-index:5">
+						<img src="assets/img/IMG-20201117-WA0009.png" class="img-fluid" alt="">
+					  </div>
+					</div>
+			</div>
+			
+			<div class="carousel-item">
+					<div class="row d-flex align-items-center">
+					  <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+						<h1> 11111 one stop solution for gear boxes and pumps</h1>
+					   
+						<a href="#about" class="btn-get-started scrollto">Get Started</a>
+					  </div>
+					  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" style="z-index:5">
+						<img src="assets/img/IMG-20201117-WA0011.png" class="img-fluid" alt="">
+					  </div>
+					</div>
+			</div>
+			
+			
+			 
+		</div>
+		
+		
+ <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+  </div>
+  </div>
   </section><!-- End Hero -->
 
   <main id="main">
@@ -481,8 +550,8 @@ a.close-chat {
         <div class="row">
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
           <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
-            <div class="content d-flex flex-column justify-content-center">
-              <h3 data-aos="fade-in" data-aos-delay="100">About Niranthara Traders</h3>
+            <div class="content d-flex flex-column justify-content-center section-title">
+              <h2 data-aos="fade-in" data-aos-delay="100">About Niranthara Traders</h2>
               <p data-aos="fade-in">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
               </p>
@@ -522,12 +591,24 @@ a.close-chat {
         <div class="section-title">
           <h2 data-aos="fade-in">Services</h2>
           <p data-aos="fade-in">
-		  Our services includes in field of gear boxes and pumps.
+		  Our services includes in field of industrial induction motors and gear boxes.
 		  </p>
         </div>
 
         <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/IMG-20201117-WA0013.png" alt="..." class="img-responsive">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Industrial induction motors</a></h5>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i>Explore products</a></div>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
             <div class="card">
               <div class="card-img">
                 <img src="assets/img/IMG-20201117-WA0004.png" alt="..." class="img-responsive">
@@ -539,22 +620,6 @@ a.close-chat {
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/IMG-20201117-WA0013.png" alt="..." class="img-responsive">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Pumps</a></h5>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i>Explore products</a></div>
-              </div>
-            </div>
-
-          </div>
-        
-       
-
       </div>
     </section><!-- End Services Section -->
 
@@ -564,185 +629,215 @@ a.close-chat {
 
         <div class="section-title">
           <h2 data-aos="fade-in">Products</h2>
-          <p data-aos="fade-in">Our current product catalog includes gears and pumps. </p>
+          <p data-aos="fade-in">Our current product catalog includes industrial induction motors and gear boxes. </p>
         </div>
 
         <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-gear">Gear boxes</li>
-              <li data-filter=".filter-pump">Pumps</li>
-            
+              <li data-filter=".filter-pump">Induction Motors</li>
+			  <li data-filter=".filter-gear">Gear boxes</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up">
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
-            <div class="portfolio-wrap">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-gear " >
+            <div class="portfolio-wrap gbox">
               <img src="assets/img/portfolio/IMG-20201117-WA0002.jpg" class="img-fluid" alt="">
+			  <br/>
+			  <center class="gname"><p>GEAR BOX</p></center>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/IMG-20201117-WA0002.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
                 <a href="#" title="More Details"><i class="icofont-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>GEAR BOX</h4>
+                <!-- <p>App</p> -->
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/IMG-20201117-WA0003.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/IMG-20201117-WA0003.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-pump">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/IMG-20201117-WA0010.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/IMG-20201117-WA0010.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-pump">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/IMG-20201117-WA0011.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/IMG-20201117-WA0011.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/IMG-20201117-WA0004.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/IMG-20201117-WA0004.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/IMG-20201117-WA0005.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/IMG-20201117-WA0005.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/IMG-20201117-WA0006.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/IMG-20201117-WA0006.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
-            <div class="portfolio-wrap">
+		
+		   <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
+            <div class="portfolio-wrap gbox">
               <img src="assets/img/portfolio/IMG-20201117-WA0007.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>SHAFT MOUNTED SPEED REDUCER GEAR BOX</p></center>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/IMG-20201117-WA0007.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-plus-circle"></i></a>
                 <a href="#" title="More Details"><i class="icofont-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
+                <h4>SHAFT MOUNTED SPEED REDUCER GEAR BOX</h4>
+                <!-- <p>Card</p> -->
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/IMG-20201117-WA0008.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/IMG-20201117-WA0008.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-		  
+        
 		   <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
-            <div class="portfolio-wrap">
+		    <div class="portfolio-wrap gbox">
               <img src="assets/img/portfolio/IMG-20201117-WA0009.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>FOOT MOUNTED MU TYPE GEAR BOX</p></center>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/IMG-20201117-WA0009.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
                 <a href="#" title="More Details"><i class="icofont-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>FOOT MOUNTED MU TYPE GEAR BOX</h4>
+                <!-- <p>Web</p> -->
+              </div>
+            </div>
+          </div>
+		  
+          <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
+            <div class="portfolio-wrap gbox">
+              <img src="assets/img/portfolio/IMG-20201117-WA0004.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>FOOT MOUNTED MV TYPE GEAR BOX</p></center>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/IMG-20201117-WA0004.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-plus-circle"></i></a>
+                <a href="#" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>FOOT MOUNTED MV TYPE GEAR BOX<h4>
+                <!-- <p>Web</p> -->
+              </div>
+            </div>
+          </div>
+
+		  
+		  <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
+            <div class="portfolio-wrap gbox">
+              <img src="assets/img/portfolio/IMG-20201117-WA0006.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>SCREW JACK GEAR BOX</p></center>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/IMG-20201117-WA0006.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-plus-circle"></i></a>
+                <a href="#" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>SCREW JACK GEAR BOX</h4>
+                <!-- <p>Card</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
+            <div class="portfolio-wrap gbox">
+              <img src="assets/img/portfolio/IMG-20201117-WA0005.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>FLOATING AERATOR LONG GEAR BOX</p></center>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/IMG-20201117-WA0005.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-plus-circle"></i></a>
+                <a href="#" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>FLOATING AERATOR LONG GEAR BOX</h4>
+                <!-- <p>App</p> -->
+              </div>
+            </div>
+          </div>
+		  
+		   <div class="col-lg-3 col-md-6 portfolio-item filter-gear">
+            <div class="portfolio-wrap gbox">
+              <img src="assets/img/portfolio/IMG-20201117-WA0003.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>INLINE HELICAL GEARED MOTOR</p></center>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/IMG-20201117-WA0003.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                <a href="#" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>INLINE HELICAL GEARED MOTOR</h4>
+                <!-- <p>Web</p> -->
+              </div>
+            </div>
+          </div>
+		  
+		  
+          
+          <div class="col-lg-3 col-md-6 por tfolio-item filter-gear">
+            <div class="portfolio-wrap gbox">
+              <img src="assets/img/portfolio/IMG-20201117-WA0008.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>GEAR</p></center>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/IMG-20201117-WA0008.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                <a href="#" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>GEAR</h4>
+                <!-- <p>Web</p> -->
+              </div>
+            </div>
+          </div>
+		  
+		    <div class="col-lg-3 col-md-6 portfolio-item filter-pump">
+            <div class="portfolio-wrap gbox">
+              <img src="assets/img/portfolio/IMG-20201117-WA0002.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>GEAR BOX</p></center>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/IMG-20201117-WA0002.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-plus-circle"></i></a>
+                <a href="#" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>GEAR BOX</h4>
+                <!-- <p>App</p> -->
+              </div>
+            </div>
+          </div>
+		  
+		  
+		   <div class="col-lg-3 col-md-6 portfolio-item filter-pump">
+            <div class="portfolio-wrap gbox">
+              <img src="assets/img/portfolio/IMG-20201117-WA0010.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>INVERTER DUTY MOTOR</p></center>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/IMG-20201117-WA0010.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-plus-circle"></i></a>
+                <a href="#" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>INVERTER DUTY MOTOR</h4>
+                <!-- <p>App</p> -->
+              </div>
+            </div>
+          </div>
+		  
+		    <div class="col-lg-3 col-md-6 portfolio-item filter-pump">
+            <div class="portfolio-wrap gbox">
+              <img src="assets/img/portfolio/IMG-20201117-WA0011.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>CRANE DUTY MOTOR</p></center>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/IMG-20201117-WA0011.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a>
+                <a href="#" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>CRANE DUTY MOTOR</h4>
+                <!-- <p>Card</p> -->
               </div>
             </div>
           </div>
 		     <div class="col-lg-3 col-md-6 portfolio-item filter-pump">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap gbox">
               <img src="assets/img/portfolio/IMG-20201117-WA0012.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>BRAKE MOTOR</p></center>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/IMG-20201117-WA0012.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-plus-circle"></i></a>
                 <a href="#" title="More Details"><i class="icofont-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
+                <h4>BRAKE MOTOR</h4>
+                <!-- <p>App</p> -->
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-pump">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap gbox">
               <img src="assets/img/portfolio/IMG-20201117-WA0013.jpg" class="img-fluid" alt="">
+			  <center class="gname"><p>SMOKE MOTOR</p></center>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/IMG-20201117-WA0013.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a>
                 <a href="#" title="More Details"><i class="icofont-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
+                <h4>SMOKE MOTOR</h4>
+                <!-- <p>Card</p> -->
               </div>
             </div>
           </div>
@@ -758,7 +853,7 @@ a.close-chat {
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="fade-in">Contact</h2>
+          <h2 data-aos="fade-in">Contact Us</h2>
           <p data-aos="fade-in">We are there for you to provide industrial solutions, get in touch by below ways.</p>
         </div>
 
@@ -771,21 +866,23 @@ a.close-chat {
                 <div class="info-box" data-aos="fade-up">
                   <i class="bx bx-map"></i>
                   <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>701, Market Road, Chingavanam, Kottayam, Kerala</p>
+                  <p>Pin Code : 686531</p>
+                  <p>GST No: 32BEAPM2583R1Z4</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>contact@nirantharatraders.com</p>
+                  <p>enquiry@nirantharatraders.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-phone-call"></i>
                   <h3>Call Us</h3>
-                  <p>+91 96862 95795</p>
+                  <p>+91 9845895931</p>
                 </div>
               </div>
             </div>
@@ -830,38 +927,27 @@ a.close-chat {
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="footer-top">
-
       <div class="container" data-aos="fade-up">
-
-        <div class="row  justify-content-center">
-          <div class="col-lg-6">
-            <h3>Niranthara Traders</h3>
-            <p>Serving with gratitude.</p>
-          </div>
-        </div>
-
-       
-
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-
-      </div>
+				<div class="row justify-content-center">
+				  <div class="col-lg-6">
+					<h3>Niranthara Traders</h3>
+					<p>Serving with gratitude.</p>
+				  </div>
+				</div>
+				<div class="social-links">
+				  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+				  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+				  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+			    </div>
+	   </div>
     </div>
-
     <div class="container footer-bottom clearfix">
       <div class="copyright">
         &copy; Copyright <strong><span>Niranthara Traders</span></strong>. All Rights Reserved
       </div>
-     
     </div>
-  </footer><!-- End Footer -->
+ </footer><!-- End Footer -->
 
   <div id='whatsapp-chat' class='hide'>
   <div class='header-chat'>
@@ -939,7 +1025,7 @@ a.close-chat {
       )
     )
       var d = "whatsapp://send";
-    var g = d + "?phone=+919686295795" + e + f;
+    var g = d + "?phone=+919845895931" + e + f;
     window.open(g, "_blank");
   }
 });
